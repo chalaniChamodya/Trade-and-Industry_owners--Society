@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../Assets/Imgs/login.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" layoutX="567.0" layoutY="292.0" onKeyPressed="#EnterOnUsername" prefHeight="50.0" prefWidth="300.0" promptText="Username" style="-fx-border-radius: 15; -fx-background-radius: 15;" />
+      <PasswordField fx:id="txtPassword" layoutX="567.0" layoutY="369.0" onKeyPressed="#EnterOnPassword" prefHeight="50.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 15;" />
+      <JFXButton fx:id="btnLogin" layoutX="567.0" layoutY="518.0" onAction="#btnLoginOnAction" prefHeight="48.0" prefWidth="300.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="LOGIN" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="686.0" layoutY="573.0" onAction="#btnSignupOnAction" text="SignUp ?" />
+      <Label layoutX="656.0" layoutY="141.0" text="Log In" textFill="#68430f">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="136.0" layoutY="326.0">
+         <image>
+            <Image url="@../Assets/Imgs/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="603.0" layoutY="252.0" text="Enter your credentials to log in !" textFill="#543305">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

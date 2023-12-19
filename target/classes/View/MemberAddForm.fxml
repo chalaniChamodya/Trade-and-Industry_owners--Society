@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="913.0" prefWidth="1610.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.MemberAddFormController">
+   <children>
+      <Label layoutX="51.0" layoutY="28.0" text="Add New Member" textFill="#533710">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="51.0" layoutY="85.0" prefHeight="793.0" prefWidth="1500.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="46.0" layoutY="31.0" prefHeight="36.0" prefWidth="137.0" text="Member ID" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMemberId" alignment="CENTER" layoutX="46.0" layoutY="63.0" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="46.0" layoutY="135.0" prefHeight="36.0" prefWidth="217.0" text="Name with initials" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNAmeWithInitials" layoutX="46.0" layoutY="167.0" onKeyPressed="#EnterOnNameWithInitials" prefHeight="40.0" prefWidth="518.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="242.0" prefHeight="36.0" prefWidth="137.0" text="Full Name" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtFullName" layoutX="46.0" layoutY="273.0" onKeyPressed="#EnterOnFullName" prefHeight="40.0" prefWidth="1097.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="355.0" prefHeight="36.0" prefWidth="217.0" text="Business Address" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBusinessAddress" layoutX="46.0" layoutY="386.0" onKeyPressed="#EnterOnBusinessAddress" prefHeight="40.0" prefWidth="518.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="677.0" layoutY="355.0" prefHeight="36.0" prefWidth="223.0" text="Personal Address" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPersonalAddress" layoutX="676.0" layoutY="386.0" onKeyPressed="#EnterOnPersonalAddress" prefHeight="40.0" prefWidth="467.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="584.0" prefHeight="36.0" prefWidth="137.0" text="Email" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="689.0" prefHeight="36.0" prefWidth="200.0" text="Business Type" textFill="#75511e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="46.0" layoutY="615.0" onKeyPressed="#EnterOnEmail" prefHeight="40.0" prefWidth="518.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="677.0" layoutY="584.0" prefHeight="36.0" prefWidth="137.0" text="NIC" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNic" layoutX="677.0" layoutY="615.0" onKeyPressed="#EnterOnNic" prefHeight="40.0" prefWidth="467.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtBusinesType" layoutX="46.0" layoutY="722.0" onKeyPressed="#EnterOnBusinessType" prefHeight="40.0" prefWidth="518.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="677.0" layoutY="689.0" prefHeight="36.0" prefWidth="181.0" text="Admission Fee" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAdmissionFee" layoutX="677.0" layoutY="722.0" prefHeight="40.0" prefWidth="467.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="677.0" layoutY="476.0" prefHeight="36.0" prefWidth="306.0" text="Business Contact Number" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBusinesContactNumber" layoutX="677.0" layoutY="507.0" onKeyPressed="#EnterOnBusinessContactNum" prefHeight="40.0" prefWidth="467.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="46.0" layoutY="476.0" prefHeight="36.0" prefWidth="293.0" text="Personal Contact Number" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPersonalContactNumber" layoutX="46.0" layoutY="507.0" onKeyPressed="#EnterOnPersonalContactNum" prefHeight="40.0" prefWidth="518.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="677.0" layoutY="135.0" prefHeight="36.0" prefWidth="173.0" text="Date of Birth" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtDateOfBirth" layoutX="677.0" layoutY="172.0" onKeyPressed="#EnterOnDateOfBirth" prefHeight="40.0" prefWidth="467.0" styleClass="date-picker" stylesheets="@../Styles/InitialForm.css" />
+            <Label layoutX="677.0" layoutY="35.0" prefHeight="36.0" prefWidth="173.0" text="Joined Date" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtJoinedDate" layoutX="677.0" layoutY="72.0" onKeyPressed="#EnterOnJoinedDate" prefHeight="40.0" prefWidth="467.0" style="background: FFE09D;" styleClass="date-picker" stylesheets="@../Styles/InitialForm.css" />
+            <JFXButton fx:id="btnAdd" layoutX="1345.0" layoutY="711.0" onAction="#btnAddMemberOnAction" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="ADD" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" layoutX="1193.0" layoutY="711.0" onAction="#btnCancelOnAction" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="CANCEL" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="21.0" layoutY="9.0">
+         <image>
+            <Image url="@../Assets/Icons/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="12.0" onAction="#btnBackOnAction" text=" " />
+   </children>
+</AnchorPane>

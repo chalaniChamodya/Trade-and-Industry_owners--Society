@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="913.0" prefWidth="1610.0" style="-fx-background-color: white; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="106.0" layoutY="65.0" onMouseClicked="#btnGenMeetingAttendanceOnAction" prefHeight="126.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblGeneralAttendance" layoutX="153.0" layoutY="69.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="13.0" prefHeight="21.0" prefWidth="257.0" text="Monthly General Meeting" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="112.0" layoutY="39.0" text="Attendance" textFill="#533710">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="478.0" layoutY="65.0" onMouseClicked="#btnComMeetingAttendanceOnAction" prefHeight="126.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblCommitteeAttendance" layoutX="148.0" layoutY="70.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="14.0" prefHeight="21.0" prefWidth="280.0" text="Monthly Committee Meeting" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="40.0" text="Attendance" textFill="#533710">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="853.0" layoutY="62.0" onMouseClicked="#btnSubscriptionFeeUnpaidOnAction" prefHeight="126.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblSubscriptionUnpaid" layoutX="151.0" layoutY="69.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="14.0" prefHeight="21.0" prefWidth="242.0" text="Subscription Fee Unpaid" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="44.0" text="Count" textFill="#533710">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1223.0" layoutY="65.0" onMouseClicked="#btnMembershipFeeUnpaidOnAction" prefHeight="126.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblMembershipUnpaid" layoutX="153.0" layoutY="69.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="14.0" prefHeight="21.0" prefWidth="242.0" text="Membership Fee Unpaid" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="134.0" layoutY="35.0" text="Count" textFill="#533710">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane fx:id="panePieChart" layoutX="479.0" layoutY="265.0" prefHeight="516.0" prefWidth="500.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="102.0" layoutY="31.0" prefHeight="24.0" prefWidth="297.0" text="Monthly Fund Distribution" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="1037.0" layoutY="265.0" prefHeight="516.0" prefWidth="500.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="102.0" layoutY="27.0" prefHeight="24.0" prefWidth="297.0" text="Monthly Fund Vs Expenses" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Pane fx:id="panePieChart1" layoutX="-1.0" layoutY="97.0" prefHeight="415.0" prefWidth="500.0" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="106.0" layoutY="265.0" prefHeight="212.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblGeneralAttendance1" layoutX="153.0" layoutY="69.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="58.0" layoutY="14.0" prefHeight="21.0" prefWidth="195.0" text="Upcoming Meetings" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="6.0" layoutY="48.0" prefHeight="200.0" prefWidth="302.0" style="-fx-background-radius: 15; -fx-background-color: F6DEA8; -fx-border-radius: 15;" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="200.0" prefWidth="302.0" style="-fx-background-color: F6DEA8; -fx-border-color: F6DEA8;" />
+               </content>
+            </ScrollPane>
+            <Line endX="140.0" layoutX="130.0" layoutY="48.0" startX="-100.0" stroke="#533710" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="110.0" layoutY="544.0" prefHeight="209.0" prefWidth="314.0" style="-fx-background-color: F6DEA8; -fx-background-radius: 15;">
+         <children>
+            <Label fx:id="lblGeneralAttendance11" layoutX="153.0" layoutY="69.0" prefHeight="43.0" prefWidth="3.0" textFill="#683f0a">
+               <font>
+                  <Font name="SansSerif Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="16.0" prefHeight="21.0" prefWidth="174.0" text="Upcoming Events" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="6.0" layoutY="48.0" prefHeight="200.0" prefWidth="302.0" style="-fx-background-radius: 15; -fx-background-color: F6DEA8; -fx-border-radius: 15;" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="vBox1" prefHeight="200.0" prefWidth="302.0" style="-fx-background-color: F6DEA8; -fx-border-color: F6DEA8;" />
+               </content>
+            </ScrollPane>
+            <Line endX="140.0" layoutX="130.0" layoutY="48.0" startX="-100.0" stroke="#533710" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

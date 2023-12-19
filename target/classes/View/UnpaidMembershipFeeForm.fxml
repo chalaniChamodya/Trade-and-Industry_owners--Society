@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="913.0" prefWidth="1610.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.UnpaidMembershipFeeFormController">
+   <children>
+      <Label layoutX="51.0" layoutY="28.0" text="Membership Fee Unpaid Details" textFill="#533710">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnInformAll" layoutX="1406.0" layoutY="25.0" onAction="#btnInformAllOnAction" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 15;" text="Inform All" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="51.0" layoutY="102.0" prefHeight="772.0" prefWidth="1511.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutY="86.0" prefHeight="686.0" prefWidth="1511.0" style="-fx-background-color: white; -fx-border-color: white;" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="704.0" prefWidth="1493.0" style="-fx-background-color: white; -fx-border-color: white;" />
+               </content>
+            </ScrollPane>
+            <HBox layoutX="44.0" prefHeight="81.0" prefWidth="1467.0">
+               <children>
+                  <Label prefHeight="81.0" prefWidth="322.0" text="Member ID" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="231.0" text="Name" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="233.0" text="Contact No" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="294.0" text="Business Type" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="242.0" text="NIC" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="171.0" text="Action" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="1375.0" layoutX="125.0" layoutY="85.0" startX="-100.0" stroke="#533710" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="21.0" layoutY="9.0">
+         <image>
+            <Image url="@../Assets/Icons/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="12.0" onAction="#btnBackOnAction" text=" " />
+   </children>
+</AnchorPane>

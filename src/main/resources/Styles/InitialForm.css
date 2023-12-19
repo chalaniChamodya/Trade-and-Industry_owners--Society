@@ -1,0 +1,11 @@
+.date-picker {
+    -fx-control-inner-background: #FFE09D;
+    -fx-background-radius: 15 15 15 15;
+}
+.date-picker > .text-field {
+    -fx-background-radius: 15 0 0 15;
+}
+
+.date-picker > .arrow-button {
+    -fx-background-radius: 0 15 15 0;
+}

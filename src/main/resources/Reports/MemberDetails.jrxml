@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-11-30T21:02:26 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MemberDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5770d562-e5bf-4975-a220-e86a6ef4b6df">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<queryString>
+		<![CDATA[select * from member]]>
+	</queryString>
+	<field name="member_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name_with_initials" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="business_contact_num" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="business_Type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="member_id">
+		<groupExpression><![CDATA[$F{member_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="FixRelativeToBottom" x="190" y="67" width="190" height="31" uuid="a305dc40-f5a3-4ee4-8e11-7a4072ded7e6">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="SansSerif" size="17" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[Member Details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="380" height="46" uuid="96b841b2-9751-42d6-877d-11d77b475076"/>
+				<textElement textAlignment="Center">
+					<font fontName="Monospaced" size="19" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Trade & Industrial Owners's Society]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="160" y="27" width="100" height="30" uuid="71a2dd7a-b233-4638-aba4-e9e53b58bd44"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="28" width="100" height="30" uuid="a4e06ee2-789b-4be0-9493-e2af9f410e8e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[member_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="27" width="100" height="30" uuid="3fb28c28-4c0f-4289-9bfd-fe6271572a8b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="27" width="134" height="30" uuid="967303b7-7220-4bc0-bfed-037308f4f725"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Business Type
+]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<textField>
+				<reportElement x="160" y="30" width="100" height="30" uuid="2326daee-2bee-4c7f-8614-7c6ee17eacf8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name_with_initials}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-10" y="29" width="100" height="30" uuid="d32d94d6-26e6-401b-bc79-f9374b898507"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{member_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="31" width="100" height="30" uuid="23600fc3-70ed-44a3-a5ea-b36352439154"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{business_contact_num}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="442" y="30" width="100" height="30" uuid="318e2a99-0a00-4dbb-b4a2-297e3ecfdd9f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{business_Type}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

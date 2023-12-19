@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="60.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.FamilyMemberBarFormController">
+   <children>
+      <HBox layoutX="13.0" prefHeight="60.0" prefWidth="785.0">
+         <children>
+            <Label fx:id="fam_mem_Id" prefHeight="60.0" prefWidth="173.0" text="Fam_mem_id" textFill="#533710">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="memberId" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="190.0" text="Member_id" textFill="#533710">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="relationship" layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="191.0" text="Relationship" textFill="#533710">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="isAlive" layoutX="494.0" layoutY="10.0" prefHeight="60.0" prefWidth="191.0" text="isAlive" textFill="#533710">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="btnDelete" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#btnDeleteOnAction">
+               <image>
+                  <Image url="@../Assets/Icons/delete.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="11.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="btnUpdate" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#btnUpdateOnAction">
+               <image>
+                  <Image url="@../Assets/Icons/update.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="11.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

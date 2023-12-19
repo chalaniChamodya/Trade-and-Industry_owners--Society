@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.SignUpFormController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../Assets/Imgs/login.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUsername" layoutX="565.0" layoutY="190.0" prefHeight="50.0" prefWidth="300.0" promptText="Username" style="-fx-border-radius: 15; -fx-background-radius: 15;" />
+      <PasswordField fx:id="txtPassword" layoutX="565.0" layoutY="389.0" prefHeight="50.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 15;" />
+      <JFXButton fx:id="btnSignup" layoutX="565.0" layoutY="549.0" onAction="#btnSignupOnAction" prefHeight="48.0" prefWidth="300.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="SIGN UP" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="684.0" layoutY="604.0" onAction="#btnLoginOnAction" text="Login?" />
+      <TextField fx:id="txtComMemId" layoutX="565.0" layoutY="255.0" prefHeight="50.0" prefWidth="300.0" promptText="Committee ID" style="-fx-border-radius: 15; -fx-background-radius: 15;" />
+      <ComboBox fx:id="cmbPosition" layoutX="565.0" layoutY="325.0" prefHeight="50.0" prefWidth="300.0" promptText="Position" style="-fx-background-radius: 15; -fx-background-color: white;" />
+      <PasswordField fx:id="txtConfirmPassword" layoutX="565.0" layoutY="460.0" prefHeight="50.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-radius: 15;" />
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="136.0" layoutY="330.0">
+         <image>
+            <Image url="@../Assets/Imgs/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="638.0" layoutY="112.0" text="Sign Up" textFill="#68430f">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

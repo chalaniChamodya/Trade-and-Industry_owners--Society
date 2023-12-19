@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pagingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="913.0" prefWidth="1610.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.FundingProgramUpdateFormController">
+   <children>
+      <Label layoutX="51.0" layoutY="28.0" text="Funding Program Management" textFill="#533710">
+         <font>
+            <Font name="SansSerif Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSponsor" layoutX="1409.0" layoutY="24.0" onAction="#btnSponsorOnAction" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 15;" text="Sponsors" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFundingProgram" layoutX="1206.0" layoutY="24.0" onAction="#btnFundingProgramOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 15;" text="Funding Program" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="51.0" layoutY="93.0" prefHeight="772.0" prefWidth="805.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" layoutY="86.0" prefHeight="686.0" prefWidth="819.0" style="-fx-background-color: white; -fx-border-color: white;" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="685.0" prefWidth="815.0" style="-fx-background-color: white; -fx-border-color: white;" />
+               </content>
+            </ScrollPane>
+            <HBox layoutX="29.0" prefHeight="81.0" prefWidth="789.0">
+               <children>
+                  <Label prefHeight="81.0" prefWidth="239.0" text="Program ID" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="285.0" text="Program Name" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="219.0" text="Date" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="81.0" prefWidth="170.0" text="Action" textFill="#533710">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="687.0" layoutX="125.0" layoutY="85.0" startX="-117.0" stroke="#533710" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="909.0" layoutY="93.0" prefHeight="772.0" prefWidth="661.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="26.0" layoutY="21.0" text="Update Funding Program" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="109.0" text="Program ID" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProgramId" layoutX="34.0" layoutY="134.0" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <TextField fx:id="txtProgramName" layoutX="356.0" layoutY="134.0" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <Label layoutX="356.0" layoutY="109.0" text="Program Name" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateDate" layoutX="34.0" layoutY="239.0" prefHeight="45.0" prefWidth="250.0" stylesheets="@../Styles/InitialForm.css" />
+            <Label layoutX="36.0" layoutY="214.0" text="Date" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLocation" layoutX="356.0" layoutY="239.0" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <Label layoutX="365.0" layoutY="214.0" text="Location" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtIncome" layoutX="31.0" layoutY="356.0" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <Label layoutX="37.0" layoutY="329.0" text="Income" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtExpenditure" layoutX="356.0" layoutY="354.0" prefHeight="45.0" prefWidth="250.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <Label layoutX="365.0" layoutY="325.0" text="Expenditure" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescription" layoutX="34.0" layoutY="470.0" prefHeight="45.0" prefWidth="579.0" style="-fx-background-color: FFE09D; -fx-background-radius: 20;" />
+            <Label layoutX="34.0" layoutY="445.0" text="Description" textFill="#75511e">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnUpdate" layoutX="444.0" layoutY="665.0" onAction="#btnUpdateOnAction" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 15;" text="UPDATE" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancel" layoutX="268.0" layoutY="665.0" onAction="#btnCancelOnAction" prefHeight="50.0" prefWidth="156.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 15;" text="CANCEL" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="21.0" layoutY="9.0">
+         <image>
+            <Image url="@../Assets/Icons/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="12.0" onAction="#btnBackOnAction" text=" " />
+   </children>
+</AnchorPane>

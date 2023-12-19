@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="popupPane" prefHeight="1048.0" prefWidth="1918.0" style="-fx-background-color: F6DEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Trade_and_Industrial_owners_Society.Controller.GlobalFormController">
+   <children>
+      <Pane prefHeight="1048.0" prefWidth="270.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="52.0" layoutY="24.0">
+               <image>
+                  <Image url="@../Assets/Imgs/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnDashboard" layoutX="39.0" layoutY="224.0" onAction="#btnDashboardOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Dashboard" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMembers" layoutX="39.0" layoutY="295.0" onAction="#btnMembersOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Members" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMeetings" layoutX="39.0" layoutY="366.0" onAction="#btnMeetingsOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Meetings" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnMembershipDues" layoutX="39.0" layoutY="437.0" onAction="#btnMembershipDuesOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Membership Dues" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnFundingProgram" layoutX="39.0" layoutY="508.0" onAction="#btnFundingProgramOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Funding Programs" textFill="#4d4b4b">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLogOut" layoutX="40.0" layoutY="939.0" onAction="#btnLogOutOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="288.0" prefHeight="90.0" prefWidth="1630.0" style="-fx-background-color: white; -fx-background-radius: 0 0 20 20;">
+         <children>
+            <Label layoutX="39.0" layoutY="49.0" text="Welcome to Trade &amp; Industrial Owners' Society !" textFill="#8a591d">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="59.0" layoutX="126.0" layoutY="21.0" startX="-100.0" startY="-7.0" stroke="#8a591d" strokeWidth="3.0" />
+            <Label layoutX="39.0" layoutY="23.0" text="Hi," textFill="#8a591d">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="59.0" layoutX="1706.0" layoutY="19.0" startX="-100.0" startY="10.0" stroke="#8a591d" strokeWidth="3.0" />
+            <Label fx:id="setTime" layoutX="1494.0" layoutY="24.0" prefHeight="30.0" prefWidth="104.0" textFill="#533710">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="setDate" layoutX="1456.0" layoutY="53.0" prefHeight="30.0" prefWidth="141.0" textFill="#533710">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Pane layoutX="1599.0" layoutY="3.0" prefHeight="25.0" prefWidth="25.0" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1599.0" layoutY="3.0">
+               <image>
+                  <Image url="@../Assets/Icons/close-normal.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnClose" layoutX="1599.0" layoutY="3.0" onAction="#btnCloseOnAction" prefHeight="25.0" prefWidth="25.0" text=" " />
+            <Pane layoutX="851.0" layoutY="25.0" prefHeight="42.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #8a591d;">
+               <children>
+                  <JFXTextField fx:id="searchId" focusColor="WHITE" layoutX="6.0" layoutY="1.0" prefHeight="38.0" prefWidth="350.0" promptText="Enter ID or Name" style="-fx-background-radius: 20; -fx-background-color: white;" unFocusColor="WHITE">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </JFXTextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="364.0" layoutY="4.0">
+                     <image>
+                        <Image url="@../Assets/Icons/search.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton layoutX="366.0" layoutY="7.0" onAction="#btnSearchOnAction" style="-fx-border-radius: 15;" text="  " />
+               </children>
+            </Pane>
+         </children></Pane>
+      <JFXButton fx:id="btnDonations" layoutX="39.0" layoutY="579.0" onAction="#btnDonationsOnAction" prefHeight="48.0" prefWidth="192.0" style="-fx-background-color: E8E8E8; -fx-background-radius: 12;" text="Donations" textFill="#4d4b4b">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="pagingPane" layoutX="288.0" layoutY="111.0" prefHeight="913.0" prefWidth="1610.0" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>
